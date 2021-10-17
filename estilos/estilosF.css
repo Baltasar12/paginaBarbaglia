@@ -1,0 +1,223 @@
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    font-family: 'IBM Plex Sans Arabic', sans-serif ;
+	margin: 0;
+	padding: 0;
+    height: 100vh;
+	background-image:url(../imagenes/p.png) ;
+	background-repeat: repeat;
+	background-size: auto;
+}
+
+
+
+/*--Estilos de letras y personalizacion--*/
+.estiloP{
+    color: rgb(255, 166, 31);
+	padding-left: 1.6rem;
+}
+.estiloH1{
+    color: #2b264d;
+	text-transform: uppercase;
+	letter-spacing: 0.01rem;
+	font-style:inherit;
+	text-align: center;
+	padding-left: 1rem;
+	font-size: 4.5rem;
+}
+.estiloH2{
+    color: #2b264d;
+	letter-spacing: 0.01rem;
+	text-align: left;
+	padding-left: 1.5rem;
+	margin-top: 5%;
+	font-size: 2.6rem;
+}
+.estiloSpan{
+    letter-spacing: normal;
+	color: #2b264d;
+	font-weight: bolder;
+	font-size: 2rem;
+}
+
+
+/*--Personalización del Flex--*/
+.mainFlex{
+    display: flex;;
+    text-align: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    width: 100%;
+    height: 115%;
+}
+.izq{
+padding:0;
+margin:0;
+width: 30%;
+height: 40%;
+border-radius: 20px;
+background:#8c8377;
+overflow: hidden;
+}
+.izqLow{
+padding:0;
+margin:0;
+width: 30%;
+height: 40%;
+border-radius: 20px;
+background:#8c8377;
+}
+
+
+/*--Personalizacion del header--*/
+header {
+    background:#252932;
+    height: fit-content;
+    overflow: hidden;
+    margin-bottom:20px;
+}
+header .logo {
+    color:#f2f2f2;
+	font-size:36px;
+	line-height:80px;
+	float:left;
+}
+header nav {
+	display:flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+	line-height:80px;
+}
+header nav a {
+	display:inline-block;
+	color:#fff;
+	text-decoration:none;
+	padding:10px 20px;
+	line-height:80px;
+	font-size:20px;
+	font-weight:bold;
+}
+.navbar {
+	width:90%;
+	max-width:1000px; 
+	margin:auto; 
+	overflow:hidden;
+}
+header nav a:hover {
+	background:#ff667a;
+	border-radius:50px;
+}
+
+
+/*--Personalizacion footer--*/
+footer{
+    width:100%;
+	overflow:hidden; 
+	background:#252932;
+	color:#fff;
+	font-size:16px;
+	height: 50px;
+	margin-top: 10%;
+	display:flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+
+/*--Animaciónes--*/
+.shadow-drop-2-center {
+	-webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.shadow-pop-tl {
+	-webkit-animation: shadow-pop-tl 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	        animation: shadow-pop-tl 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+
+
+/*--Media Query--*/
+@media only screen and(max-width: 480px) {
+	#grilla{
+		grid-template-columns: auto;
+    	grid-template-rows: auto;
+	}
+}
+@media only screen and(max-width: 768px){
+	#grilla{
+	grid-template-columns: repeat(4,1fr);
+	}
+	header{
+		flex-direction: column;
+	}
+}
+@media only screen and(max-width: 1924px){
+	#grilla{
+		grid-template-columns: repeat(3,1fr);
+	}
+}
+
+
+/*--KeyFrame--*/
+@-webkit-keyframes shadow-drop-2-center {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-transform: translateZ(50px);
+              transform: translateZ(50px);
+      -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+              box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    }
+  }
+  @keyframes shadow-drop-2-center {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-transform: translateZ(50px);
+              transform: translateZ(50px);
+      -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+              box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    }
+  }
+  
+
+@-webkit-keyframes shadow-pop-tl {
+    0% {
+      -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+              box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+      -webkit-transform: translateX(0) translateY(0);
+              transform: translateX(0) translateY(0);
+    }
+    100% {
+      -webkit-box-shadow: -1px -1px #3e3e3e, -2px -2px #3e3e3e, -3px -3px #3e3e3e, -4px -4px #3e3e3e, -5px -5px #3e3e3e, -6px -6px #3e3e3e, -7px -7px #3e3e3e, -8px -8px #3e3e3e;
+              box-shadow: -1px -1px #3e3e3e, -2px -2px #3e3e3e, -3px -3px #3e3e3e, -4px -4px #3e3e3e, -5px -5px #3e3e3e, -6px -6px #3e3e3e, -7px -7px #3e3e3e, -8px -8px #3e3e3e;
+      -webkit-transform: translateX(8px) translateY(8px);
+              transform: translateX(8px) translateY(8px);
+    }
+  }
+  @keyframes shadow-pop-tl {
+    0% {
+      -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+              box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+      -webkit-transform: translateX(0) translateY(0);
+              transform: translateX(0) translateY(0);
+    }
+    100% {
+      -webkit-box-shadow: -1px -1px #3e3e3e, -2px -2px #3e3e3e, -3px -3px #3e3e3e, -4px -4px #3e3e3e, -5px -5px #3e3e3e, -6px -6px #3e3e3e, -7px -7px #3e3e3e, -8px -8px #3e3e3e;
+              box-shadow: -1px -1px #3e3e3e, -2px -2px #3e3e3e, -3px -3px #3e3e3e, -4px -4px #3e3e3e, -5px -5px #3e3e3e, -6px -6px #3e3e3e, -7px -7px #3e3e3e, -8px -8px #3e3e3e;
+      -webkit-transform: translateX(8px) translateY(8px);
+              transform: translateX(8px) translateY(8px);
+    }
+  }
+  

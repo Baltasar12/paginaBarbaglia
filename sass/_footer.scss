@@ -1,0 +1,17 @@
+/*Personalizacion footer*/
+@mixin tamaño ($height,$width){
+    height: $height;
+    width: $width;
+}
+
+footer{
+    @include tamaño(50px,100%);
+    margin-top: 10%;
+	font-size:16px;
+	overflow:hidden; 
+	background:#252932;
+	color:#fff;
+	display:flex;
+	justify-content: space-evenly;
+	align-items: center;
+}

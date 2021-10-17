@@ -1,0 +1,42 @@
+/*Personalizacion del header*/
+
+
+header {
+	width:100%;
+	overflow:hidden;
+	background:#252932;
+	margin-bottom:20px;
+	height: fit-content;
+}
+.navBar {
+	width:90%;
+	max-width:1000px; 
+	margin:auto;
+	overflow:hidden;
+}
+header .logo {
+	color:#f2f2f2;
+	font-size:36px;
+	line-height:80px;
+	float:left;
+}
+header nav {
+	display:flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+	line-height:80px;
+}
+header nav a {
+	display:inline-block;
+	color:#fff;
+	text-decoration:none;
+	padding:10px 20px;
+	line-height: 80px;
+	font-size:20px;
+	font-weight:bold;
+}
+header nav a:hover {
+	background:#ff667a;
+	border-radius: (90px/30)+30;/*Operaciones basicas*/
+}

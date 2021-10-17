@@ -1,0 +1,57 @@
+/*Tarjetas*/
+
+
+::before,
+::after{
+    box-sizing: border-box;
+}
+.tarjeta{
+    color: hsl(0, 0%, 100%);
+    background-size: cover;
+    padding: 10rem 0 0;
+    max-width: 35ch;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition:   500ms ease;
+    
+    .contenido{
+        --padding: 1.5rem;
+        padding: var(--padding);
+    }
+    .contenido__titulo{
+        position: relative;
+        width: max-content;
+    }
+    .contenido__titulo::after{
+        content: "";
+        position: absolute;
+        height: 4px;
+        left: calc(var(--padding)*-1 );/*operaciones basicas*/
+        bottom: -2px;
+        width: calc(100% + var(--padding));/*operaciones basicas*/
+        background: #ff667a;
+        transform-origin: left;
+        transition: 500ms ease;
+    }
+    .contenido__button{
+        cursor: pointer;
+        display:inline-block;
+        text-decoration: none;
+        color: hsl(207, 19%, 9%);
+        background-color: #ff667a;
+        padding: 0.5em 1.25em;
+        border-radius: 0.25em;
+    }
+    .contenido__button:hover,
+    .contenido__button:focus{
+        background-color: hsl(0, 0%, 100%);
+    }
+}
+.tarjeta:hover,
+.tarjeta:focus-within{
+    transform: scale(1.05);
+}
+.tarjeta:hover .contenido__titulo::after,
+.tarjeta:focus-within .contenido__titulo::after{
+    transform: scaleX(1);
+}

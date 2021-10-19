@@ -26,15 +26,15 @@
     }
     iframe#vid1{
         grid-area: vid1;
-        justify-self: end;
+        justify-self: end !important;
     }
     iframe#vid2{
         grid-area: vid2;
-        justify-self: start;
+        justify-self: start !important;
     }
     a#img{
         grid-area: img;
-        justify-self: center;
+        justify-self: center !important;
     }
     footer{
         grid-area: footer;

@@ -53,7 +53,7 @@
 #grilla {
   display: grid;
   grid-template-areas: "header header header " "h1 none none " "p p p " "uno dos tres" "guia .  guia2" "vid1 . vid2" "foto  . ." ". cuatro  ." "footer footer footer";
-  grid-template-columns: 3fr 4fr 3fr;
+  grid-template-columns: 3fr 3fr 3fr;
   grid-template-rows: auto auto auto 1fr 0.5fr 1fr 0.5fr auto auto; }
   #grilla header {
     grid-area: header; }
@@ -92,6 +92,7 @@
     background-image: url(https://www.pcworld.es/cmsdata/features/3778130/pc_desktop_deals_thumb900_1-1.jpg); }
   #grilla .tres {
     grid-area: tres;
+    justify-self: start;
     background-image: url(https://www.undertec.store/wp-content/uploads/2020/08/mejores-notebooks-2021.jpg); }
   #grilla .cuatro {
     grid-area: cuatro; }

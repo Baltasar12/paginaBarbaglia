@@ -54,6 +54,7 @@
     }
     .tres{
         grid-area: tres;
+        justify-self: start;
         background-image: url(https://www.undertec.store/wp-content/uploads/2020/08/mejores-notebooks-2021.jpg);
     }
     .cuatro{
@@ -72,7 +73,7 @@
 	". cuatro  ."
 	"footer footer footer"
 	;
-	grid-template-columns: 3fr 4fr 3fr;
+	grid-template-columns: 3fr 3fr 3fr;
     grid-template-rows: auto auto auto 1fr 0.5fr 1fr 0.5fr auto auto;
 
  @include tablet{

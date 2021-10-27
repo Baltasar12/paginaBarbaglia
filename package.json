@@ -1,7 +1,7 @@
 {
   "name": "cubo",
   "version": "1.0.0",
-  "description": "",
+  "description": "Dependencias para el uso y desarrollo de mi pagina web con uso especifico del sistema de grid y personalizaciones para cada seccion del proyecto",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,5 +13,8 @@
   "devDependencies": {
     "node-sass": "^6.0.1",
     "nodemon": "^2.0.13"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3"
   }
 }

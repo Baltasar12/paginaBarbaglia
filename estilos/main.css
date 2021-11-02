@@ -71,13 +71,13 @@
     grid-area: tabla; }
   #grilla iframe#vid1 {
     grid-area: vid1;
-    justify-self: end; }
+    justify-self: end !important; }
   #grilla iframe#vid2 {
     grid-area: vid2;
-    justify-self: start; }
+    justify-self: start !important; }
   #grilla a#img {
     grid-area: img;
-    justify-self: center; }
+    justify-self: center !important; }
   #grilla footer {
     grid-area: footer; }
   #grilla nav {

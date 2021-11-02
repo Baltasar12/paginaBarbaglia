@@ -18,7 +18,7 @@ body{
 	padding-left: 1.6rem;
 }
 .estiloH1{
-    color: #2b264d;
+        color: #2b264d;
 	text-transform: uppercase;
 	letter-spacing: 0.01rem;
 	font-style:inherit;
@@ -109,6 +109,36 @@ header nav a {
 header nav a:hover {
 	background:#ff667a;
 	border-radius:50px;
+}
+
+
+
+
+/*Consultas de la comunidad*/
+.contenedor{
+        display: flex;
+        margin-left: 27%;
+        width: 45%;
+        height: 50%;
+        border-radius: 25px;
+        border: #ff667a 2px solid;
+        background-color: #ff667a;
+}
+
+.contenedor__usuario{
+        height: 50px;
+        width: 60x;
+        border-top-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        background-color:#2b264d;
+}
+#nombreU{
+        margin: 10px;
+        color: white;
+}
+
+#pregunt{
+        margin-top: 20px;
 }
 
 
@@ -210,6 +240,12 @@ display:flex;
 justify-content: space-evenly;
 align-items: center;
 }
+
+
+
+
+
+
 
 
 /*--Animaciónes--*/

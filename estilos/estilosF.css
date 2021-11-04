@@ -1,13 +1,16 @@
 body{
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    font-family: 'IBM Plex Sans Arabic', sans-serif ;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        font-family: 'IBM Plex Sans Arabic', sans-serif ;
 	margin: 0;
 	padding: 0;
-    height: 100vh;
+        height: 100vh;
 	background-image:url(../imagenes/p.png) ;
 	background-repeat: repeat;
 	background-size: auto;
+}
+main{
+        overflow: hidden;
 }
 
 
@@ -42,7 +45,7 @@ body{
 }
 
 
-/*--Personalización del Flex--*/
+/*-- Personalización del Flex -- Personalizacion de FAQ*/
 .mainFlex{
 display: flex;;
 text-align: center;
@@ -71,52 +74,11 @@ background:#8c8377;
 }
 
 
-/*--Personalizacion del header--*/
-header {
-    background:#252932;
-    height: fit-content;
-    overflow: hidden;
-    margin-bottom:20px;
-}
-header .logo {
-    color:#f2f2f2;
-	font-size:36px;
-	line-height:80px;
-	float:left;
-}
-header nav {
-	display:flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	flex-wrap: wrap;
-	line-height:80px;
-}
-header nav a {
-	display:inline-block;
-	color:#fff;
-	text-decoration:none;
-	padding:10px 20px;
-	line-height:80px;
-	font-size:20px;
-	font-weight:bold;
-}
-.navbar {
-	width:90%;
-	max-width:1000px; 
-	margin:auto; 
-	overflow:hidden;
-}
-header nav a:hover {
-	background:#ff667a;
-	border-radius:50px;
-}
-
-
-
-
-/*Consultas de la comunidad*/
+/*-- Consultas de la comunidad -- Personalizacion de Comunidad*/
 .contenedor{
         display: flex;
+        flex-wrap: wrap;
+        margin-top: 25px;
         margin-left: 27%;
         width: 45%;
         height: 50%;
@@ -126,19 +88,39 @@ header nav a:hover {
 }
 
 .contenedor__usuario{
+        align-self: flex-start;
         height: 50px;
         width: 60x;
         border-top-left-radius: 25px;
         border-bottom-right-radius: 25px;
         background-color:#2b264d;
 }
+
+.contenedor__pregunta{
+        width: 70%;
+}
+
+.contenedor__texto{
+        border:#2b264d 5px solid;
+        border-radius: 20px;
+        margin-bottom: 70px;
+        margin-left: 82px;
+        width: 80%;
+}
+
 #nombreU{
         margin: 10px;
         color: white;
 }
 
 #pregunt{
-        margin-top: 20px;
+        margin-top: 18px;
+        margin-left: 17px;      
+}
+
+#text{
+ padding: 10px;
+ font-weight: bold;
 }
 
 
@@ -227,6 +209,48 @@ text-decoration: none
     
 
 
+
+/*--Personalizacion del header--*/
+header {
+        background:#252932;
+        height: fit-content;
+        overflow: hidden;
+        margin-bottom:20px;
+}
+header .logo {
+        color:#f2f2f2;
+        font-size:36px;
+        line-height:80px;
+        float:left;
+}
+header nav {
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        line-height:80px;
+}
+header nav a {
+        display:inline-block;
+        color:#fff;
+        text-decoration:none;
+        padding:10px 20px;
+        line-height:80px;
+        font-size:20px;
+        font-weight:bold;
+}
+.navbar {
+        width:90%;
+        max-width:1000px; 
+        margin:auto; 
+        overflow:hidden;
+}
+header nav a:hover {
+        background:#ff667a;
+        border-radius:50px;
+}
+
+
 /*--Personalizacion footer--*/
 footer{
 width:100%;
@@ -235,7 +259,6 @@ background:#252932;
 color:#fff;
 font-size:16px;
 height: 50px;
-margin-top: 10%;
 display:flex;
 justify-content: space-evenly;
 align-items: center;
